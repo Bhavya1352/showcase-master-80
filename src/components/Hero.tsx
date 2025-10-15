@@ -8,54 +8,57 @@ const Hero = () => {
       <div className="absolute inset-0 bg-[image:var(--gradient-glow)] pointer-events-none" />
       
       <div className="container px-4 mx-auto relative z-10">
-        <div className="max-w-4xl mx-auto text-center space-y-8 animate-fade-in">
-          {/* Badge */}
-          <div className="inline-block">
-            <span className="px-4 py-2 rounded-full bg-primary/10 text-primary border border-primary/20 text-sm font-medium">
-              Available for Opportunities
-            </span>
-          </div>
-          
-          {/* Main heading */}
-          <h1 className="text-5xl md:text-7xl font-bold leading-tight">
-            Hi, I'm{" "}
-            <span className="text-gradient">Bhavya Mishra</span>
-          </h1>
-          
-          {/* Subtitle */}
-          <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto">
-            Web Developer & Project Admin
-          </p>
-          
-          <p className="text-lg text-muted-foreground">
-            @GSSOC'25 @SSOC'25 | Building responsive web experiences and leading open-source initiatives
-          </p>
-          
-          {/* CTA buttons */}
-          <div className="flex flex-wrap gap-4 justify-center pt-4">
-            <Button 
-              size="lg" 
-              className="bg-primary hover:bg-primary/90 glow-primary"
-              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-            >
-              <Mail className="mr-2 h-5 w-5" />
-              Get in Touch
-            </Button>
-            <Button 
-              size="lg" 
-              variant="outline"
-              className="border-primary/50 hover:bg-primary/10"
-              asChild
-            >
-              <a 
-                href="https://linkedin.com/in/bhavya-mishra-7a3b09324" 
-                target="_blank" 
-                rel="noopener noreferrer"
+        <div className="flex flex-col md:flex-row items-center justify-between animate-fade-in">
+          <div className="md:w-1/2 space-y-8 text-left">
+            {/* Badge */}
+            <div className="inline-block">
+              <span className="px-4 py-2 rounded-full bg-primary/10 text-primary border border-primary/20 text-sm font-medium">
+                Available for Opportunities
+              </span>
+            </div>
+            
+            {/* Main heading */}
+            <h1 className="text-5xl md:text-7xl font-bold">
+              Hi, I'm{" "}
+              <span className="text-gradient">Bhavya Mishra</span>
+            </h1>
+            
+            <p className="text-lg text-muted-foreground">
+              Building responsive web experiences and leading open-source initiatives
+            </p>
+            
+            {/* CTA buttons */}
+            <div className="flex flex-wrap gap-4 pt-4">
+              <Button 
+                size="lg" 
+                className="bg-primary hover:bg-primary/90 glow-primary"
+                onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
               >
-                <Linkedin className="mr-2 h-5 w-5" />
-                View LinkedIn
-              </a>
-            </Button>
+                <Mail className="mr-2 h-5 w-5" />
+                Get in Touch
+              </Button>
+              <Button 
+                size="lg" 
+                variant="outline"
+                className="border-primary/50 hover:bg-primary/10"
+                asChild
+              >
+                <a 
+                  href="https://linkedin.com/in/bhavya-mishra-7a3b09324" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                >
+                  <Linkedin className="mr-2 h-5 w-5" />
+                  View LinkedIn
+                </a>
+              </Button>
+            </div>
+          </div>
+          <div className="md:w-1/2 mt-8 md:mt-0">
+            <div className="relative w-full max-w-sm mx-auto">
+              <div className="absolute inset-0 bg-gradient-to-r from-primary to-accent rounded-lg blur-lg"></div>
+              <img src="/IMG_20250616_232203.jpg" alt="Bhavya Mishra" className="relative w-full rounded-lg shadow-2xl" />
+            </div>
           </div>
         </div>
       </div>

@@ -14,15 +14,17 @@ const About = () => {
         
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div className="space-y-6 animate-slide-up">
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              I'm currently pursuing a Bachelor's in Electronics and Communication at JSS Noida, 
-              discovering a strong passion for web development. From designing simple layouts to 
-              building interactive web pages, I truly enjoy the creative and problem-solving process.
-            </p>
-            
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              Excited to connect, collaborate, and grow together in the world of tech!
-            </p>
+            <div className="bg-primary/10 p-6 rounded-3xl rounded-tl-none">
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                I'm currently pursuing a Bachelor's in Electronics and Communication at JSS Noida, 
+                discovering a strong passion for web development. From designing simple layouts to 
+                building interactive web pages, I truly enjoy the creative and problem-solving process.
+              </p>
+              
+              <p className="text-lg text-muted-foreground leading-relaxed mt-4">
+                Excited to connect, collaborate, and grow together in the world of tech!
+              </p>
+            </div>
             
             <div className="space-y-4 pt-4">
               <div className="flex items-center gap-3 text-foreground">
