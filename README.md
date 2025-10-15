@@ -15,7 +15,7 @@ Welcome to my **personal portfolio website**! This project highlights my skills,
 
 ## 🛠 Technologies Used
 
-- HTML5, CSS, JavaScript
+- HTML, CSS, JavaScript
 
 ---
 
